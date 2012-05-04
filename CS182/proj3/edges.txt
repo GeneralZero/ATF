@@ -1,0 +1,7 @@
+3|3
+V|Wash & 6th|0
+V|Hudson & 6th|1
+V|Wash & 5th|2
+E|1|0|10
+E|0|2|20
+E|2|0|20
