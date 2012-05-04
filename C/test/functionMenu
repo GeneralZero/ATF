@@ -1,0 +1,26 @@
+Function -- File
+----------------
+	check_char -- input.c
+	doselect -- input.c
+	get_win_size -- get_win_size.c
+getout -- endWork.c
+	init_caps -- initialWork.c
+	init_terminal -- initialWork.c
+	main -- main.c
+	my_termpring - printing.c
+	refreshin -- refresh.c
+	refreshout -- refresh.c
+	restore_terminal -- endWork.c
+setup_elems -- initialWork.c
+	show_elems -- show_elems.c
+show_selection -- endWork.c
+	term_clear -- printing.c
+term_get_cap -- initialWork.c
+term_move -- moving.c
+	term_move_to_item -- moving.c
+	term_standend -- printing.c
+	term_standout -- printing.c
+	term_underend -- printing.c
+	term_underline -- printing.c
+	term_ve -- printing.c
+	term_vi -- printing.c

@@ -1,0 +1,38 @@
+Termcaps Assignment!
+
+Store in [...]/src/myselect/ 
+
+Summary: Write a terminal I/O enabled program to help you select stuff
+Use: for example ./my_select *.c
+This will clear the terminal and display a list of all .c files found.
+They should show up in columns.
+
+If there is not enough room for all items, display "please enlarge the window"
+
+Every time the window size changes, redisplay the items to accomodate to the new size.
+
+The first item should be underlined.
+
+Using the keyboard:
+- space bar: Used to select/deselect
+      If the item was not highlighted, this will highlight it, and move the underline to the next item. Wrapping around if necessary.
+      If the item was already highlighted, remove the highlight and stay there
+
+- ESC: restore everything and exit
+
+- Enter: restore everything and print onto the standard output the list of all items that are currently highlighted (with a whitespace between each one)
+
+- Up arrow: move to the previous item, wrap around if necessary (i.e. pressing up when on the first item will move the underline to the last item)
+
+- Down arrow: move to the next item, wrap around if necessary
+
+- Left arrow: move to the item on same row but previous column. If you are on the first column, jump to the first item. DO NOT wrap around.
+
+- Right arrow: move to the item on the same row but next column. If you are on the last column, jump to the last item. DO NOT wrap around.
+
+The other keys (including control-C) should have no effect.
+
+Applications:
+more `./my_select *.c`
+
+The back-quotes will allow you to first select a group of c files. Their names will be send to the "more" command.
