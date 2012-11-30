@@ -4,7 +4,7 @@
 // Let's start with some basic info.  You must include your full name, but if you don't want to include your phone number or email address you can just delete those lines entirely.
 $personal['first_name']= 'Brian';
 $personal['last_name'] = 'Ridings';
-$personal['phone_number'] = '201-6756882';
+$personal['phone_number'] = '201-675-6882';
 $personal['email_address'] = 'bridings@stevens.edu';
 
 // Now let's add any social media pages you've created and want to share.  You can add whatever you want by following the format below.  The first item you add is the name of the social media site, and the second item you add is the URL to your page.
@@ -37,8 +37,15 @@ $work_history[] = array('June 2011 - Present',
 						'Help Desk Information Technology Consultants (ITC)',
 						'Stevens Institute of Technology {Hoboken, NJ}',
 						'Diagnose computer and network problems for Stevens students, faculty and staff');
-// Phew!  That was the hard part.  Now we need to enter in some other important information about you.  Let's start with your education.  You only need to enter two things: your school and a description of your degree.  If you went to Brown University you'd enter that for your school, then put your year and graduation date as the description (e.g. "BA in Social Sciences, Class of 2002").
-$education[] = array('Stevens Inisitute of Technology', 'Master: Cyber Security | Major: Computer Science | Minor: Math');
+
+$work_history[] = array('September 2007 - May 2010' , 'Moderated Windows Server 2003.
+Managed multable computers with Windows 2003 and Users with Global Policy.
+Taught club members programing and other useful information about computers.');
+
+//Education
+$education[] = array('Stevens Institute of Technology', 'Cyber Security (Master)');
+$education[] = array('Stevens Institute of Technology', 'Computer Science (Major)');
+$education[] = array('Stevens Institute of Technology', 'Mathematics (Minor)');
 $education[] = array('Don Bosco Prepatory HS', 'High School Deploma');
 
 // Presumably you learned something in school and developed a few skills over the course of your lifetime.  Let's add them here.  
@@ -51,6 +58,14 @@ $awards[] = array('Award Name', 'Description');
 $awards[] = array('Award Name', 'Description');
 $awards[] = array('Award Name', 'Description');
 
+ 
+$clubs[] = array('Stevens Cyber Defence Team', '');
+$clubs[] = array('Stevens Hobby Robotics', '');
+$clubs[] = array('Off Center Sketch Comedy', '');
+$clubs[] = array('Parliamentary Debate', 'Treasurer for the Parlementary Debate Club for the First Year');
+$clubs[] = array('Setvens Game Development Club', '');
+$clubs[] = array('Stevens Open Source Socity', '');
+
 // Want to turn off any of the sections on your resume?  You can do that in the settings.  Just change any section from true to false and it'll disappear.  (Note: You can't turn off your work history--that's sort of important!)
 $settings['social_media'] = true;
 $settings['education'] = true;
@@ -59,6 +74,6 @@ $settings['awards'] = false;#true;
 
 // There are also a few other settings you can toggle on and off, such as offering a printable version of your resume and whether to use a dark or light style (set style to "dark" or "light" to choose).
 $settings['printable'] = false;#true;
-$settings['style'] = "dark";
+$settings['style'] = "light";
 $settings['lang'] = "en";
 ?>
