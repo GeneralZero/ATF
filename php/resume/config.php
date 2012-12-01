@@ -14,7 +14,7 @@ $social_media[] = array('Twitter', 'https://twitter.com/GeneralZer0');
 // Cool.  With that stuff out of the way, let's input your work history.  This part requires a bit more information but it's similar to adding a social media page like you did above but with more information.  The first item you enter is last year you worked at the job (or the range of time, if you prefer).  The second item is your job title, the third is the company you worked for, and the fourth is a description of the work you did there.  The description can get a little long, but that's okay.  Just be sure not to use any single quotes ('') or things will break!  You can add as many jobs as you like and the script will adapt.
 $work_history[] = array('Sept 2012 - Dec 2012',
 						'IT Helpdesk Intern',
-						'MacKay Shields LLC',
+						'MacKay Shields LLC {NY, NY}',
 						'Provided support during the move of the Company to a new buliding.
 Created Ghost image of the Computers.');
 $work_history[] = array('March 2012',
@@ -33,12 +33,11 @@ $work_history[] = array('June 2011 - Present',
 						'Help Desk Information Technology Consultants (ITC)',
 						'Stevens Institute of Technology {Hoboken, NJ}',
 						'Diagnose computer and network problems for Stevens students, faculty and staff');
-$work_history[] = array('June 2011 - Present',
-						'Help Desk Information Technology Consultants (ITC)',
-						'Stevens Institute of Technology {Hoboken, NJ}',
-						'Diagnose computer and network problems for Stevens students, faculty and staff');
 
-$work_history[] = array('September 2007 - May 2010' , 'Moderated Windows Server 2003.
+$work_history[] = array('September 2007 - May 2010', 
+						'President of the Computer Club',
+						'Don Bosco Prepratory High School',
+'Moderated Windows Server 2003.
 Managed multable computers with Windows 2003 and Users with Global Policy.
 Taught club members programing and other useful information about computers.');
 
@@ -71,9 +70,9 @@ $settings['social_media'] = true;
 $settings['education'] = true;
 $settings['skills'] = true;
 $settings['awards'] = false;#true;
-
+$settings['clubs'] = true;
 // There are also a few other settings you can toggle on and off, such as offering a printable version of your resume and whether to use a dark or light style (set style to "dark" or "light" to choose).
-$settings['printable'] = false;#true;
-$settings['style'] = "light";
+$settings['printable'] = true;
+$settings['style'] = "dark";
 $settings['lang'] = "en";
 ?>
