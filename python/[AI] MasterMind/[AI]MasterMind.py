@@ -51,8 +51,17 @@ class Mind_game(object):
 				test = raw_input("Max board size [%d]:"% self.board_size)
 			self.board_size = int(test.strip()) if int(test.strip()) else self.board_size	
 
+	def get_numbers(self):
+		test = raw_input("Guess %d intagers between 1 and %d:ex 1,2,3,4..." % (self.challenge_key_size, self.challenge_key_possoble))
+		test = re.findall(r'\d', re.sub(r'[^\d]', '', test)[:limit])
+		while len(test) != limit:
+			print "Wrong input string %d" % len(test)
+			test = raw_input('Test:')
+			test = re.findall(r'\d', re.sub(r'[^\d]', '', test)[:limit])
+
 	def main(self):
-		self.setup()
+		#Generates a challenge Key by using the numbers numbers that are available
+		#Makes sure that there are no dupluicates
 		rand_list = range(1, self.challenge_key_possoble+1)
 		for x in range(self.challenge_key_size):
 			test = random.choice(rand_list)
@@ -61,13 +70,15 @@ class Mind_game(object):
 
 		for x in range(self.board_size):
 			self.draw_board()
-			print self.challenge_key 
-			test = raw_input("Guess %d intagers between 1 and %d:ex 1,2,3,4..." % (self.challenge_key_size, self.challenge_key_possoble))
-			test = test.split(',')
+			print self.challenge_key
+			test = self.get_numbers()
 			if self.check_guess(test)[0] == self.challenge_key_size:
-				print "You Win"
 				break
 			self.prev_guesses.append([test, self.check_guess(test)])
+		if self.check_guess(test)[0] == self.challenge_key_size:
+			print "You Guessed correctly it was:"
+		else:
+			print "The Key was:"
 		print self.challenge_key
 
 g = Mind_game()
